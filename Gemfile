@@ -15,3 +15,9 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'debugger'
+
+gem 'sqlite3'
+gem 'inherited_resources'
+gem 'pry'
+gem 'will_paginate', '~> 3.0'
+gem 'ransack'
