@@ -10,7 +10,7 @@ class RailsBackend::InstallGenerator < Rails::Generators::Base
 
   private
     def copy_applications_file file
-      copy_file("views/backend/application/#{file}", "app/backend/application/#{file}")
+      copy_file("views/backend/application/#{file}", "app/views/backend/application/#{file}")
     end
 
     def copy_layout file
