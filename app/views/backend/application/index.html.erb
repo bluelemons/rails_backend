@@ -1,0 +1,19 @@
+<%= render 'index_action_bar'%>
+<div class="row-fluid">
+  <div class="span9">
+    <div class="page-header">
+      <h1><%=t '.title', :default => controller_name.titleize %></h1>
+    </div>
+    <%= bootstrap_flash %>
+    <%= will_paginate %>
+    <%= render 'table' %>
+  </div>
+  <div class="span3">
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header"><%=t '.filtters', :default => "filtters" %></li>
+        <%= render 'search' %>
+      </ul>
+    </div>
+  </div>
+</div>
