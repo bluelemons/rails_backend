@@ -21,5 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'inherited_resources'
   s.add_dependency 'will_paginate', '~> 3.0'
   s.add_dependency 'ransack'
-
+  s.add_dependency 'twitter-bootstrap-rails'
+  s.add_dependency 'simple_form'
+  s.add_dependency 'less-rails'
 end
