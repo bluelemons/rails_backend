@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: 72ec70fc9cd5fb98405791a3acff27a852b180a3
+  specs:
+    twitter-bootstrap-rails (2.2.6)
+      actionpack (>= 3.1)
+      execjs
+      rails (>= 3.1)
+      railties (>= 3.1)
+
 PATH
   remote: .
   specs:
@@ -139,10 +149,6 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    twitter-bootstrap-rails (2.2.6)
-      actionpack (>= 3.1)
-      execjs
-      railties (>= 3.1)
     twitter_bootstrap_form_for (1.0.5)
       actionpack (~> 3)
       railties (~> 3)
@@ -167,7 +173,7 @@ DEPENDENCIES
   simple_form
   sqlite3
   therubyracer
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails!
   twitter_bootstrap_form_for
   uglifier (>= 1.0.3)
   will_paginate (~> 3.0)
