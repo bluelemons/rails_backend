@@ -36,13 +36,13 @@
   </head>
   <body>
 
-    <%#= render 'layouts/navigation' %>
+    <%= render 'navigation' %>
 
     <div class="container-fluid">
       <%= bootstrap_flash %>
       <%= yield %>
 
-      <%#= render '/layouts/footer'%>
+      <%= render 'footer'%>
 
     </div> <!-- /container -->
 
