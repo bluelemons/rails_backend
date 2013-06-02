@@ -4,5 +4,9 @@ Rails.application.routes.draw do
 
   namespace :backend do
     resources :blogs
+
+    root to: 'blogs#index'
   end
+
+  root to: 'blogs#index'
 end
