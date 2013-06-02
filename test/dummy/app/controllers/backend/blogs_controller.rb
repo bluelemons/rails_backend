@@ -1,2 +1,2 @@
-class Backend::BlogsController < RailsBackend::ApplicationController
+class Backend::BlogsController < Backend::ApplicationController
 end
