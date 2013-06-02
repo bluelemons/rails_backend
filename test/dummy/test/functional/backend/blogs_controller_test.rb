@@ -25,4 +25,20 @@ class Backend::BlogsControllerTest < ActionController::TestCase
     get :index, :q => {:title_content => "super"}
     assert_equal @blog, assigns(:blogs).first
   end
+
+  test 'should get new' do
+    get :new
+    assert_response :success
+  end
+
+  test 'should get edit' do
+    get :edit, id: @blog.id
+    assert_response :success
+  end
+
+  test 'should get show' do
+    get :show, id: @blog.id
+    assert_response :success
+  end
+
 end
