@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class Backend::BlogsControllerTest < ActionController::TestCase
+
+  def setup
+    @blog = Blog.create title: "super new post"
+  end
   test 'should get index' do
     get :index
     assert_response :success
@@ -18,8 +22,7 @@ class Backend::BlogsControllerTest < ActionController::TestCase
   end
 
   test 'should search by attribute' do
-    blog = Blog.create title: "super new post"
     get :index, :q => {:title_content => "super"}
-    assert_equal blog, assigns(:blogs).first
+    assert_equal @blog, assigns(:blogs).first
   end
 end
