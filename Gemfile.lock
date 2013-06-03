@@ -1,6 +1,7 @@
 GIT
-  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 72ec70fc9cd5fb98405791a3acff27a852b180a3
+  remote: git://github.com/olvap/twitter-bootstrap-rails.git
+  revision: e289dbac3e3883178dffb852ac65fb4feefa8beb
+  branch: submenus
   specs:
     twitter-bootstrap-rails (2.2.6)
       actionpack (>= 3.1)
@@ -12,7 +13,7 @@ PATH
   remote: .
   specs:
     rails_backend (0.0.1)
-      inherited_resources
+      inherited_resources (>= 1.4.0)
       less-rails
       rails (~> 3.2.13)
       ransack
