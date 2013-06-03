@@ -2,10 +2,10 @@ class RailsBackend::ViewsGenerator < Rails::Generators::NamedBase
   source_root File.expand_path('../templates', __FILE__)
 
   def generate
-    copy_file '_table.html.erb'
-    copy_file '_show.html.erb'
-    copy_file '_form.html.erb'
-    copy_file '_search.html.erb'
+    copy '_table.html.erb'
+    copy '_show.html.erb'
+    copy '_form.html.erb'
+    copy '_search.html.erb'
   end
 
   private
