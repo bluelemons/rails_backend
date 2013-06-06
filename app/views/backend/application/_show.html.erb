@@ -1,6 +1,10 @@
-<dl>
-  <% resource_class.attribute_names.each do |attr| %>
-    <dt><%= resource_class.human_attribute_name(attr) %></dt>
-    <dd><%= resource.public_send(attr) %>
-  <% end %>
-</dl>
+<table>
+  <tbody>
+    <% resource_class.attribute_names.each do |attr| %>
+      <tr>
+        <td class="field_name"><%= resource_class.human_attribute_name(attr) %></td>
+        <td class="field_value"><%= resource.public_send(attr) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

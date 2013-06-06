@@ -1,5 +1,8 @@
-<div class="page-header">
-  <h1><%=t '.title', :default => controller_name.titleize %></h1>
+<div class="row-fluid">
+  <div class="span9">
+    <%= content_for :page_title do%>
+      <%=t '.title', :default => controller_name.titleize %>
+    <% end %>
+    <%= render 'show' %>
+  </div>
 </div>
-
-<%= render 'show' %>

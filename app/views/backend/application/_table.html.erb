@@ -1,4 +1,4 @@
-<table>
+<table class="index-table">
   <thead>
     <tr>
       <% attributes.each do |attr|%>
@@ -6,25 +6,27 @@
           <%= resource_class.human_attribute_name(attr) %>
         </th>
       <% end %>
-      <th> &nbsp; </th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% collection.each do |resource| %>
       <tr>
         <% attributes.each do |attr| %>
-          <td>
-            <%= resource.public_send(attr).to_s.truncate(20) %>
-          </td>
+          <td><%= resource.public_send(attr).to_s.truncate(20) %></td>
         <% end %>
         <td>
-          <%= link_to 'show', resource_path(resource) %>
-          |
-          <%= link_to 'edit', edit_resource_path(resource) %>
-          |
-          <%= link_to 'destroy', resource_path(resource), method: :delete, confirm: "Are you sure?" %>
+          <%= link_to t('.show', :default => t("helpers.links.show")),
+                      resource_path(resource), :class => 'show_button' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_resource_path(resource), :class => 'edit_button' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      resource_path(resource),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'destroy_button' %>
         </td>
       </tr>
-    </tbody>
-  <% end %>
+    <% end %>
+  </tbody>
 </table>
