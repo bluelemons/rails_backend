@@ -1,19 +1,8 @@
-GIT
-  remote: git://github.com/olvap/twitter-bootstrap-rails.git
-  revision: e289dbac3e3883178dffb852ac65fb4feefa8beb
-  branch: submenus
-  specs:
-    twitter-bootstrap-rails (2.2.6)
-      actionpack (>= 3.1)
-      execjs
-      rails (>= 3.1)
-      railties (>= 3.1)
-
 PATH
   remote: .
   specs:
     rails_backend (0.0.1)
-      inherited_resources (>= 1.4.0)
+      inherited_resources
       less-rails
       rails (~> 3.2.13)
       ransack
@@ -66,7 +55,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     has_scope (0.5.1)
-    hike (1.2.2)
+    hike (1.2.3)
     i18n (0.6.1)
     inherited_resources (1.4.0)
       has_scope (~> 0.5.0)
@@ -87,7 +76,7 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
-    multi_json (1.7.5)
+    multi_json (1.7.6)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
@@ -147,9 +136,14 @@ GEM
       ref
     thor (0.18.1)
     tilt (1.4.1)
-    treetop (1.4.12)
+    treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
+    twitter-bootstrap-rails (2.2.7)
+      actionpack (>= 3.1)
+      execjs
+      rails (>= 3.1)
+      railties (>= 3.1)
     twitter_bootstrap_form_for (1.0.5)
       actionpack (~> 3)
       railties (~> 3)
@@ -174,7 +168,7 @@ DEPENDENCIES
   simple_form
   sqlite3
   therubyracer
-  twitter-bootstrap-rails!
+  twitter-bootstrap-rails (~> 2.2.7)
   twitter_bootstrap_form_for
   uglifier (>= 1.0.3)
   will_paginate (~> 3.0)

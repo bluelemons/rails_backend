@@ -29,5 +29,5 @@ gem 'uglifier', '>= 1.0.3'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 #FIXME: i use submenus twitter-bootstrap-rails, remove this after merge.
-gem "twitter-bootstrap-rails", git: "git://github.com/olvap/twitter-bootstrap-rails.git", branch: 'submenus'
+gem "twitter-bootstrap-rails", '~> 2.2.7'
 gem 'twitter_bootstrap_form_for'
