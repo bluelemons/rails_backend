@@ -15,12 +15,12 @@ Or add in yout gemfile
 
 For the last version
 
-    gem 'rails_backend' git: 'git://github.com/olvap/rails_backend.git'
-    
+    gem 'rails_backend', git: 'git://github.com/olvap/rails_backend.git'
+
 Run the install generator
 
     rails g rails_backend:install
-    
+
 This will generate the application and assets files necesary for rails backend.
 
 
@@ -29,7 +29,7 @@ This will generate the application and assets files necesary for rails backend.
 Register a new resource for Rails Backend
 
     rails g rails_backend:register [resource]
-    # i.e 
+    # i.e
     rails g rails_backend:register blogs
 
 This asume you already have a model for this resource, like Blog
@@ -44,9 +44,9 @@ Then you should be able to see all the backend of the resource in /backend/resou
 Is you need some customization over the views, you can run this command
 
     rails g rails_backend:views [resource]
-    # i.e 
+    # i.e
     rails g rails_backend:views blogs
-    
+
 It going to generate some views fiels under, views/backend/controller_name/
 
 
