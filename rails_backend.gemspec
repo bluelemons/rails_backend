@@ -10,18 +10,18 @@ Gem::Specification.new do |s|
   s.authors     = ["olvap"]
   s.email       = ["oldani.pablo@gmail.com"]
   s.homepage    = "https://github.com/olvap/rails_backend"
-  s.summary     = "a rails backend application."
+  s.summary     = "A backend application for rails."
   s.description = "A customizable backend admin system for Ruby on Rails."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.13"
-  # s.add_dependency "jquery-rails"
-  s.add_dependency 'inherited_resources'
+  s.add_dependency "rails", ">= 3.0.0"
+  s.add_dependency 'inherited_resources', '>= 1.3.1'
   s.add_dependency 'will_paginate', '~> 3.0'
   s.add_dependency 'ransack'
-  s.add_dependency 'twitter-bootstrap-rails'
+  s.add_dependency 'twitter-bootstrap-rails', '~> 2.2.7'
   s.add_dependency 'simple_form'
+  s.add_dependency 'therubyracer'
   s.add_dependency 'less-rails'
 end
