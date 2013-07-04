@@ -20,10 +20,12 @@ module Backend
       end
 
       def add_breadcrumbs
-        url = ""
-        paths.each do |path|
-          url = url + "/" + path
-          add_breadcrumb path, url
+        if paths
+          url = ""
+          paths.each do |path|
+            url = url + "/" + path
+            add_breadcrumb path, url
+          end
         end
       end
   end
