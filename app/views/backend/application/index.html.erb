@@ -4,9 +4,12 @@
     <%= content_for :page_title do%>
       <%=t '.title', :default => controller_name.titleize %>
     <% end %>
-
-    <%= will_paginate %>
-    <%= render 'table' %>
+    <% unless collection.empty? %>
+      <%= will_paginate %>
+      <%= render 'table' %>
+    <% else %>
+      <%= render 'empty' %>
+    <% end %>
   </div>
   <div class="span3">
     <div class="well sidebar-nav">

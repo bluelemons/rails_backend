@@ -5,9 +5,17 @@ class Backend::BlogsControllerTest < ActionController::TestCase
   def setup
     @blog = Blog.create title: "super new post"
   end
+
   test 'should get index' do
     get :index
     assert_response :success
+  end
+
+  test 'should display message for empty collection' do
+    Blog.delete_all
+    get :index
+    assert_select '.empty-message', 'There are no elements to display.'
+    assert_select 'table.index-table', false, 'there is no table'
   end
 
   test 'should get a collection variable' do
