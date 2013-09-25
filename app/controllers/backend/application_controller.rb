@@ -9,6 +9,10 @@ module Backend
       resource_class.attribute_names - %w(id created_at updated_at)
     end
 
+    def permitted_params
+      params.permit(resource_name.downcase.to_sym => attributes)
+    end
+
     protected
       def collection
         @q = end_of_association_chain.search(params[:q])
@@ -27,6 +31,10 @@ module Backend
             add_breadcrumb path, url
           end
         end
+      end
+
+      def resource_name
+        resource.class.name
       end
   end
 end
