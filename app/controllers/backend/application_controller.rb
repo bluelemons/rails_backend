@@ -34,7 +34,7 @@ module Backend
       end
 
       def resource_name
-        resource.class.name
+        end_of_association_chain.name
       end
   end
 end
