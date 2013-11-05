@@ -13,9 +13,13 @@ Or add in yout gemfile
 
     gem 'rails_backend'
 
-For the last version
+For the last version, rails 4
 
     gem 'rails_backend', git: 'git://github.com/olvap/rails_backend.git'
+    
+For rails 3
+
+    gem 'rails_backend', git: 'git://github.com/olvap/rails_backend.git', branch: 'rails3'
 
 Run the install generator
 
