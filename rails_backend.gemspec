@@ -7,13 +7,14 @@ require "rails_backend/version"
 Gem::Specification.new do |s|
   s.name        = "rails_backend"
   s.version     = RailsBackend::VERSION
+  s.licenses    = ["AGPL"]
   s.authors     = ["olvap"]
   s.email       = ["oldani.pablo@gmail.com"]
   s.homepage    = "https://github.com/olvap/rails_backend"
   s.summary     = "A backend application for rails."
   s.description = "A customizable backend admin system for Ruby on Rails."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["COPYING", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 4.0"

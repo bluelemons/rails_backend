@@ -64,4 +64,4 @@ Cooming soon
 
 ### Licence
 
-This project rocks and uses MIT-LICENSE.
+This project uses the AGPLv3 licence.
