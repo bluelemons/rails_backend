@@ -9,7 +9,8 @@
       <%= link_to t('.edit', :default => t("helpers.links.edit")),
                 edit_resource_path(resource), :class => 'edit_button' %>
       <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                resource_path(resource), method: :delete, confirm: "Are you sure?", :class => 'destroy_button' %>
+            resource_path(resource), method: :delete, class: 'destroy_button',
+            data: { confirm: "Are you sure?" } %>
     <% when "edit" %>
       <%= link_to t('.show', :default => t("helpers.links.show")),
                 resource_path(resource), :class => 'show_button' %>
