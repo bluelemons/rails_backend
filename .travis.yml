@@ -1,0 +1,6 @@
+language: ruby
+before_script:
+  - rake app:db:setup
+  - rake app:db:test:prepare
+rvm:
+  - 2.0.0
