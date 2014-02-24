@@ -1,7 +1,6 @@
-# RailsBackend
-A Rails backend application system in the rails way
+# RailsBackend [![Code Climate](https://codeclimate.com/github/olvap/rails_backend.png)](https://codeclimate.com/github/olvap/rails_backend) [![Travis](https://travis-ci.org/BlueLemon/rails_backend.png)](https://travis-ci.org/BlueLemon/rails_backend)
 
-[![Code Climate](https://codeclimate.com/github/olvap/rails_backend.png)](https://codeclimate.com/github/olvap/rails_backend)
+A Rails backend application system in the rails way
 
 ## Install
 
@@ -16,7 +15,7 @@ Or add in yout gemfile
 For the last version, rails 4
 
     gem 'rails_backend', git: 'git://github.com/olvap/rails_backend.git'
-    
+
 For rails 3
 
     gem 'rails_backend', git: 'git://github.com/olvap/rails_backend.git', branch: 'rails3'
