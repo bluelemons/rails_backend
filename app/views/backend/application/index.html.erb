@@ -1,5 +1,5 @@
-<div class="row-fluid">
-  <div class="span9">
+<div class="row">
+  <div class="col-md-9">
 
     <%= content_for :page_title do%>
       <%=t '.title', :default => controller_name.titleize %>
@@ -11,9 +11,10 @@
       <%= render 'empty' %>
     <% end %>
   </div>
-  <div class="span3">
+
+  <div class="col-md-3">
     <div class="well sidebar-nav">
-      <ul class="nav nav-list">
+      <ul class="nav">
         <li class="nav-header"><%=t '.filters', :default => "filters" %></li>
       </ul>
       <%= render 'search' %>
