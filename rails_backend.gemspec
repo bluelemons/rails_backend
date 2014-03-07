@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'will_paginate', '~> 3.0'
   s.add_dependency 'ransack'
   s.add_dependency 'twitter-bootstrap-rails', '~> 2.2'
-  s.add_dependency "bootstrap3-rails", "~> 3.0.1"
+  s.add_dependency 'less-rails-bootstrap', '~> 3.0.3'
   s.add_dependency 'simple_form', '~> 3.0'
   s.add_dependency 'therubyracer'
   s.add_dependency 'less-rails', '~> 2.4'
