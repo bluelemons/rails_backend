@@ -5,6 +5,8 @@ class RailsBackend::InstallGenerator < Rails::Generators::Base
     copy_applications_file '_navigation.html.erb'
     copy_applications_file '_footer.html.erb'
     copy_layout 'application.html.erb'
+    copy_responder_file 'responders.en.yml'
+    copy_app_responder_file 'application_responder.rb'
     copy_assets
   end
 
@@ -17,6 +19,16 @@ class RailsBackend::InstallGenerator < Rails::Generators::Base
     def copy_layout file
       copy_file("views/layouts/backend/#{file}",
         "app/views/layouts/backend/#{file}")
+    end
+
+    def copy_responder_file
+      copy_file("config/locales/#{file}",
+        "app/config/locales/#{file}")
+    end
+
+    def copy_app_responder_file
+      copy_file("lib/#{file}",
+        "lib/locales/#{file}")
     end
 
     def copy_assets

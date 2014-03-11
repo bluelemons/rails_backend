@@ -1,7 +1,14 @@
+require "application_responder"
+
 module Backend
+
   class ApplicationController < InheritedResources::Base
 
     helper_method :attributes
+
+    InheritedResources.flash_keys = [ :info, :danger ]
+    self.responder = ApplicationResponder
+    respond_to :html
 
     def attributes
       resource_class.attribute_names - %w(id created_at updated_at)

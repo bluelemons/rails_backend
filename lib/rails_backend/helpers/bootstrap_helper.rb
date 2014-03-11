@@ -12,6 +12,4 @@ module BootstrapHelper
     end
   end
 
-  def bootstrap_flash
-  end
 end
