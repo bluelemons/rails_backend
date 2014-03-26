@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.name        = "rails_backend"
   s.version     = RailsBackend::VERSION
   s.licenses    = ["AGPL"]
-  s.authors     = ["olvap"]
+  s.authors     = ["olvap", "eloysp"]
   s.email       = ["oldani.pablo@gmail.com"]
-  s.homepage    = "https://github.com/olvap/rails_backend"
+  s.homepage    = "https://github.com/bluelemons/rails_backend"
   s.summary     = "A backend application for rails."
   s.description = "A customizable backend admin system for Ruby on Rails."
 
