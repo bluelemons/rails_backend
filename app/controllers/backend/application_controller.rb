@@ -1,5 +1,6 @@
 module Backend
-  class ApplicationController < InheritedResources::Base
+  class ApplicationController < ActionController::Base
+    inherit_resources
 
     helper_method :attributes
 
