@@ -1,6 +1,13 @@
-# RailsBackend [![CodeClimate](https://codeclimate.com/github/olvap/rails_backend.png)](https://codeclimate.com/github/olvap/rails_backend) [![Travis](https://travis-ci.org/bluelemons/rails_backend.png)](https://travis-ci.org/bluelemons/rails_backend) [![DependencyStatus](https://gemnasium.com/BlueLemon/rails_backend.png)](https://gemnasium.com/BlueLemon/rails_backend) [![Gem Version](https://badge.fury.io/rb/rails_backend.png)](http://badge.fury.io/rb/rails_backend)
+# RailsBackend
 
 A Rails backend application system in the rails way
+
+## Status
+
+- [![CodeClimate](https://codeclimate.com/github/olvap/rails_backend.png)](https://codeclimate.com/github/olvap/rails_backend)
+- [![Travis](https://travis-ci.org/bluelemons/rails_backend.png)](https://travis-ci.org/bluelemons/rails_backend)
+- [![DependencyStatus](https://gemnasium.com/BlueLemon/rails_backend.png)](https://gemnasium.com/BlueLemon/rails_backend)
+- [![Gem Version](https://badge.fury.io/rb/rails_backend.png)](http://badge.fury.io/rb/rails_backend)
 
 ## Install
 
