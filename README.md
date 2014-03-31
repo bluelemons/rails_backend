@@ -1,13 +1,14 @@
+[![Version     ](https://img.shields.io/gem/v/rails_backend.svg)](https://rubygems.org/gems/rails_backend)
+[![Dependencies](https://img.shields.io/gemnasium/bluelemons/rails_backend.svg)](https://gemnasium.com/bluelemons/rails_backend)
+[![Code Climate](https://img.shields.io/codeclimate/github/bluelemons/rails_backend.svg)](https://codeclimate.com/github/bluelemons/rails_backend)
+[![Build Status](https://img.shields.io/travis/bluelemons/rails_backend/master.svg)](https://travis-ci.org/bluelemons/rails_backend)
+[![Coverage    ](https://img.shields.io/codeclimate/coverage/github/bluelemons/rails_backend.svg)](https://codeclimate.com/github/bluelemons/rails_backend)
+[![License     ](https://img.shields.io/badge/license-AGPL-663266.svg)](https://gnu.org/licenses/agpl)
+
+
 # RailsBackend
 
 A Rails backend application system in the rails way
-
-## Status
-
-- [![CodeClimate](https://codeclimate.com/github/olvap/rails_backend.png)](https://codeclimate.com/github/olvap/rails_backend)
-- [![Travis](https://travis-ci.org/bluelemons/rails_backend.png)](https://travis-ci.org/bluelemons/rails_backend)
-- [![DependencyStatus](https://gemnasium.com/BlueLemon/rails_backend.png)](https://gemnasium.com/BlueLemon/rails_backend)
-- [![Gem Version](https://badge.fury.io/rb/rails_backend.png)](http://badge.fury.io/rb/rails_backend)
 
 ## Install
 
