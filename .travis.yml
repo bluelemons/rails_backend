@@ -4,3 +4,6 @@ before_script:
   - rake app:db:test:prepare
 rvm:
   - 2.0.0
+env:
+  global:
+    secure: NqUJA5MKbhYzJrQVKfDVNiaUZCZbfcFBvC01nhQj1sMhWVilJxy7tvplpzFnLsFQXwmHsyamdKBydP0y1FQRBHKmfuVQI8ZbD1TXN5I+gQ4Fl+vwQCx3rymBO/2VSIMkwkPNQPcJo0ea1vX/YjGODvNmwaAiq2ZKVEGaKu7GCtc=
