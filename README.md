@@ -22,7 +22,7 @@ Or add in yout gemfile
 
 For the last version, rails 4
 
-    gem 'rails_backend', git: 'git://github.com/olvap/rails_backend.git'
+    gem 'rails_backend', github: 'bluelemons/rails_backend'
 
 For rails 3
 
