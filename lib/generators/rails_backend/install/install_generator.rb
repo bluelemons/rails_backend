@@ -12,23 +12,23 @@ class RailsBackend::InstallGenerator < Rails::Generators::Base
 
   private
     def copy_applications_file file
-      copy_file("views/backend/application/#{file}",
-        "app/views/backend/application/#{file}")
+      copy_file("views/backend/application/#{ file }",
+        "app/views/backend/application/#{ file }")
     end
 
     def copy_layout file
-      copy_file("views/layouts/backend/#{file}",
-        "app/views/layouts/backend/#{file}")
+      copy_file("views/layouts/backend/#{ file }",
+        "app/views/layouts/backend/#{ file }")
     end
 
-    def copy_responder_file
-      copy_file("config/locales/#{file}",
-        "app/config/locales/#{file}")
+    def copy_responder_file file
+      copy_file("config/locales/#{ file }",
+        "app/config/locales/#{ file }")
     end
 
-    def copy_app_responder_file
-      copy_file("lib/#{file}",
-        "lib/locales/#{file}")
+    def copy_app_responder_file file
+      copy_file("lib/#{ file }",
+        "lib/locales/#{ file }")
     end
 
     def copy_assets
