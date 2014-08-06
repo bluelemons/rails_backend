@@ -10,7 +10,7 @@ class BootstrapHelperTest < ActionView::TestCase
     end
     
     request = Request.new
-    assert_equal breadcrumb(request), "<li><a href='/backend'>Backend</a></li><li><a href='/backend/blogs'>blogs</a></li><li class='active'>1</li>"
+    assert_equal breadcrumb(request), "<li><a href='/backend'>Backend</a></li><li><a href='/backend/blogs'>Blogs</a></li><li class='active'>1</li>"
   end
 
 end
