@@ -23,7 +23,7 @@ class RailsBackend::InstallGenerator < Rails::Generators::Base
 
     def copy_responder_file file
       copy_file("../config/locales/#{ file }",
-        "app/config/locales/#{ file }")
+        "config/locales/#{ file }")
     end
 
     def copy_app_responder_file file
