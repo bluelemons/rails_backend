@@ -31,7 +31,7 @@ module BootstrapHelper
     end
 
     def build_row path, i
-      content_tag(:li, content_tag(:a, path.capitalize, href: "/#{ paths[0..i].join('/') }"))
+      content_tag(:li, content_tag(:a, path.capitalize, href: paths[0..i].join('/')))
     end
 
     def paths

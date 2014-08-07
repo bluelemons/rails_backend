@@ -11,7 +11,7 @@ class BootstrapHelperTest < ActionView::TestCase
   test 'should create a breadcrumb' do
     path = Request.new
     response = breadcrumb(path)
-    assert_equal response, "<li><a href=\"/backend\">Backend</a></li><li><a href=\"/backend/blogs\">Blogs</a></li><li class=\"active\">1</li>"
+    assert_equal response, "<li><a href=\"backend\">Backend</a></li><li><a href=\"backend/blogs\">Blogs</a></li><li class=\"active\">1</li>"
   end
 
 end
