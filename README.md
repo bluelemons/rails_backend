@@ -8,7 +8,7 @@
 
 # RailsBackend
 
-A Rails backend application system in the rails way
+A Rails backend application system the rails way.
 
 ## Install
 
@@ -32,7 +32,7 @@ Run the install generator
 
     rails g rails_backend:install
 
-This will generate the application and assets files necesary for rails backend.
+This will generate the application and asset files necesary for rails backend.
 
 
 ## Usage
@@ -43,7 +43,7 @@ Register a new resource for Rails Backend
     # i.e
     rails g rails_backend:register blogs
 
-This asume you already have a model for this resource, like Blog
+This will asume you already have a model for this resource, like Blog
 
 Then you should be able to see all the backend of the resource in /backend/resource
 
@@ -58,7 +58,7 @@ Is you need some customization over the views, you can run this command
     # i.e
     rails g rails_backend:views blogs
 
-It going to generate some views fiels under, views/backend/controller_name/
+It's going to generate some view files under, views/backend/controller_name/
 
 
 ### Customize layout
