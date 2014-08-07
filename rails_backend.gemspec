@@ -31,7 +31,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'responders'
 
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'bundler'
-  s.add_development_dependency 'rake'
   s.add_development_dependency 'pry'
 end
