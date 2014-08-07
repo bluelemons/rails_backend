@@ -1,5 +1,7 @@
 <div id="action_bar">
-  <%= render 'breadcrumbs' %>
+  <div class="col-md-9">
+    <h2><%= yield :page_title %></h2>
+  </div>
   <div id="actions_buttons">
     <%= link_to t('.new', :default => t("helpers.links.new")),
       new_resource_path, :class => 'new_button' unless current_page?(new_resource_path) %>
@@ -18,3 +20,5 @@
     <%= yield :action_buttons %>
   </div>
 </div>
+
+<%= render 'breadcrumbs' %>
