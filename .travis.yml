@@ -4,3 +4,5 @@ before_script:
   - rake app:db:test:prepare
 rvm:
   - 2.0.0
+env:
+  - CODECLIMATE_REPO_TOKEN=c8e9def9712b28d4f5678671c3a494272ea100a561d0debe30983d7fc31695fa
