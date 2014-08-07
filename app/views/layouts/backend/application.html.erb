@@ -39,8 +39,8 @@
       <%= render 'navigation' %>
       <%= render 'action_bar'%>
 
-      <div class="container-fluid">
-        <%= bootstrap_flash %>
+      <div class="container">
+        <%= render 'messages' %>
         <%= yield %>
       </div>
     </div> <!-- /container -->

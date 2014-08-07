@@ -49,4 +49,11 @@ class Backend::BlogsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should create blog" do
+    assert_difference('Blog.count') do
+      post :create, blog: {title: 'Hi', body: 'This is my first blog.'}
+    end
+    assert_redirected_to backend_blog_path(assigns(:blog))
+    assert_equal 'Blog was successfully created.', flash[:info]
+  end
 end
